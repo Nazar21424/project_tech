@@ -1,4 +1,4 @@
-header{
+header {
     background-color: black;
     max-width: 100%;
     position: relative;
@@ -23,68 +23,89 @@ header .nav-bar {
     gap: 50px;
 }
 
-
-.contacts{
+.contacts {
     text-align: center;
 }
 
-.nav-item{
+.nav-item {
     list-style: none;
     background-color: blanchedalmond;
     padding: 5px 15px;
     border-radius: 5px;
 }
 
-.nav-link{
-text-decoration: none;
-color: inherit;
-text-align: center;
-width: fit-content;
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    width: fit-content;
 }
 
-.burger span{
+.burger span {
     background-color: blanchedalmond;
     width: 50px;
     height: 5px;
     display: block;
 }
 
-
-
-.burger{
+.burger {
     display: none;
     flex-direction: column;
     gap: 10px;
+    cursor: pointer;
 }
 
-@media (max-width:768px){
-header.nav-bar{
-    flex-direction: column;
-    display: none;
-    position: absolute;
-    width: 100px;
-    top: 105px;
-    left: 0;
-    gap: 0;
-}
-.nav-item{
-    width: 100%;
-    border-radius: 0;
+/* Кнопка кошика */
+.cart-btn {
+    color: blanchedalmond;
+    text-decoration: none;
+    font-size: 1rem;
+    white-space: nowrap;
 }
 
-.nav-bar.active {
-    display: flex;
+.cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 0.8rem;
 }
 
-.nav-item:last-child{
-    display: block;
-    text-align: left;
-}
+@media (max-width: 768px) {
+    /* ВИПРАВЛЕНО: було `header.nav-bar` (без пробілу) — не спрацьовував селектор */
+    header .nav-bar {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        width: 100px;
+        top: 105px;
+        left: 0;
+        gap: 0;
+    }
 
-.contacts{
-    display: none;
-}
-.burger{
-    display: flex;
-}
+    .nav-item {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .nav-bar.active {
+        display: flex;
+    }
+
+    .nav-item:last-child {
+        display: block;
+        text-align: left;
+    }
+
+    .contacts {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .cart-btn {
+        display: none;
+    }
 }

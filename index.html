@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,47 +9,69 @@
     <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
-    <header> 
-    <div class="wrapper">
+    <header>
+        <div class="wrapper">
 
-        <div class="title">
-            <div class="logo">
-                <img src="" alt="" class="logo-img">
+            <div class="title">
+                <div class="logo">
+                    <img src="" alt="" class="logo-img">
+                </div>
+                <div class="heading">
+                    <h1>Tech Visor</h1>
+                </div>
             </div>
-            <div class="heading">
-                <h1>Tech Visor</h1>
+
+            <div class="menu">
+                <ul class="nav-bar">
+                    <li class="nav-item"><a href="" class="nav-link">Link to</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Link to</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Link to</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Link to</a></li>
+                </ul>
+            </div>
+
+            <div class="contacts">
+                <p>Години роботи</p>
+                <p>+380(93)3534645</p>
+                <div class="socials">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+
+            <a href="cart.html" class="cart-btn">
+                🛒 Кошик <span class="cart-count">0</span>
+            </a>
+
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-
-        <div class="menu">
-            <ul class="nav-bar">
-                <li class="nav-item"><a href="" class="nav-link">Link to</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Link to</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Link to</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Link to</a></li>
-            </ul>
-        </div>
-
-        <div class="contacts">
-            <p>Години роботи</p>
-            <p>+380(93)3534645</p>
-            <div class="socials">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-        </div>
-
-        <div class="burger">
-            <span> </span>
-            <span> </span>
-            <span> </span>
-        </div>
-    </div>
     </header>
-    <main> </main>
-    <footer> </footer>
 
+    <main>
+        <div class="container">
+            <h2>Товари</h2>
+            <div class="catalog">
+                <div class="product">
+                    <img src="" alt="Товар 1">
+                    <h3>Товар 1</h3>
+                    <p>Опис товару</p>
+                    <p>2500 грн.</p>
+                    <button onclick="addToCart(1, 'Товар 1', 2500, 'src/image.png')">
+                        Купити
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="js/cart.js"></script>
 </body>
 </html>
